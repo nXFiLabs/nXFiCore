@@ -11,7 +11,7 @@ https://t.me/nXFiCoreBot
 ## ✨ Why nXFiCore?
 
 - 🪙 **Tip in NEAR or any NEP-141 token** - directly in chat, no external app
-- 🛡️ **Full moderation suite** - verification, anti-spam, anti-raid, word filters, and more
+- 🛡️ **Full moderation suite** - verification, anti-spam, anti-raid, word filters, impersonation detection, and more
 - 📈 **Live buy bot** - real-time swap alerts with price, market cap, and custom branding
 - ⚙️ **Everything configurable in-group** - admins control every feature from a single `/panel`, live, no downtime
 - 🔐 **Secure by design** - encrypted wallets, live-verified admin checks (not stale cached roles)
@@ -103,14 +103,37 @@ That's it. No external dashboard, no website login - everything happens inside T
 - **🎰 Emoji Spam Filter** - automatically removes messages stuffed with excessive emoji (classic spam/scam pattern), with an adjustable sensitivity threshold.
 - **🚫 Checklist Blocker** - blocks Telegram's checklist feature and common emoji/markdown workarounds used to bypass spam filters.
 - **⚠️ Configurable Warning System** - set your own warning limit (1-10) before auto-ban kicks in. Every warning comes with one-tap admin actions: pardon, mute, kick, or ban.
+- **🎭 Impersonation Guard** - detects members trying to pass themselves off as an admin, before they can scam anyone. See below for details.
 
 All of the above are toggled live from **`/panel > Moderation Settings`** - flip them on or off per group, instantly, no restart.
 
 ---
 
+### 🎭 Impersonation Guard
+
+Admin impersonation scams are one of the most common ways people get scammed in crypto communities - a fake account copies an admin's name and photo, DMs members, and asks for funds. Impersonation Guard catches this before it happens.
+
+**Toggle on from `/panel → Moderation Settings > 🎭 Impersonation Guard`.**
+
+**How it protects new members:**
+Once someone joins and passes verification, their name and username are compared against your current admin list. If it looks suspiciously close to an admin's identity, they're automatically restricted from sending messages and the team gets an instant alert - before any harm can be done.
+
+**How it protects against existing members turning bad:**
+Scammers sometimes wait it out, then quietly rename themselves to copy an admin further down the line. nXFiCore watches for this too - any name or username change from an existing member triggers the same check, closing that loophole completely.
+
+**What admins see when someone is flagged:**
+- The suspicious account's name, username, and user ID
+- Which admin they may be impersonating, and a match confidence score
+- A ping to every admin with a username set, so the alert doesn't go unnoticed
+- Two buttons: **🚫 Ban** or **✅ Confirm Safe**
+
+The flagged user stays restricted (can't send messages) until an admin makes a call. No guesswork, no falling for fake DMs - just an extra layer of protection running quietly in the background.
+
+---
+
 ### 👋 Welcome Message
 
-Fully configurable per group - set up directly from `/panel → Moderation Settings → 👋 Welcome Message`.
+Fully configurable per group - set up directly from `/panel > Moderation Settings > 👋 Welcome Message`.
 
 **Settings:**
 
