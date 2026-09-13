@@ -113,7 +113,7 @@ All of the above are toggled live from **`/panel > Moderation Settings`** - flip
 
 Admin impersonation scams are one of the most common ways people get scammed in crypto communities - a fake account copies an admin's name and photo, DMs members, and asks for funds. Impersonation Guard catches this before it happens.
 
-**Toggle on from `/panel → Moderation Settings > 🎭 Impersonation Guard`.**
+**Toggle on from `/panel > Moderation Settings > 🎭 Impersonation Guard`.**
 
 **How it protects new members:**
 Once someone joins and passes verification, their name and username are compared against your current admin list. If it looks suspiciously close to an admin's identity, they're automatically restricted from sending messages and the team gets an instant alert - before any harm can be done.
